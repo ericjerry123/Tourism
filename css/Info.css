@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #00a0e9;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+}
+
+#navbarBrand {
+    font-size: 25px;
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #00cbfd;
+}
+
+.page {
+    line-height: 2;
+}
+
+
+main {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.g-0 {
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+}
+
+img {
+    border-radius: 30%;
+}

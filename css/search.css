@@ -1,0 +1,53 @@
+body {
+    background-color: white;
+}
+
+main {
+    line-height: 2;
+}
+
+.navbar {
+    background-color: #00a0e9;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+}
+
+#navbarBrand {
+    font-size: 25px;
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #00cbfd;
+}
+
+img {
+    max-width: 414px;
+    max-height: 240px;
+}
+
+#preloader {
+    /*   這是整個會蓋住畫面的底色色塊  */
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+#status {
+    /*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+    position: fixed;
+    width: 218px;
+    height: 419px;
+    margin-left: -140px;
+    margin-top: -160px;
+    left: 50%;
+    top: 50%;
+}

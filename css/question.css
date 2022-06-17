@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+.navbar {
+    background-color: #00a0e9;
+}
+
+.navbar a {
+    color: white;
+    font-size: 20px;
+}
+
+#navbarBrand {
+    font-size: 25px;
+    color: white;
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #00cbfd;
+}
+
+.page {
+    line-height: 2;
+}

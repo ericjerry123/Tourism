@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>全國休閒農業區旅遊資訊</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+  <script src="../vex/dist/js/vex.combined.min.js"></script>
+  <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+  <link rel="stylesheet" href="../vex/dist/css/vex-theme-os.css">
+  <link rel="stylesheet" href="../vex/dist/css/vex.css">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="../css/carousel.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- header start -->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a id="navbarBrand" class="navbar-brand" href="index.html">全國休閒農業區旅遊</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          </ul>
+
+          <span class="nav-item">
+            <a class="nav-link" href="Info.html">聯絡我們</a>
+          </span>
+
+          <span class="nav-item">
+            <a class="nav-link" href="question.html">常見問題</a>
+          </span>
+
+          <span class="nav-item">
+            <a id="loginSystem" class="nav-link" href="#">登入</a>
+          </span>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
+
+  <main>
+
+    <!-- 輪播 start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+
+      <div class="container">
+        <div class="carousel-inner">
+          <div class="carousel-item active mt-5">
+            <img id="carouselPic1"
+              src="../assets/picture1.jpg"
+              class="d-block w-100 img-fluid" alt="替代文字1">
+          </div>
+
+          <div class="carousel-item mt-5">
+            <img id="carouselPic2"
+              src="../assets/picture2.jpg"
+              class="d-block w-100" alt="替代文字2">
+          </div>
+
+          <div class="carousel-item mt-5">
+            <img id="carouselPic3" src="../assets/picture3.jpg"
+              class="d-block w-100" alt="替代文字3">
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+    <!-- 輪播 end -->
+
+    <!-- 搜尋 start -->
+    <div class="container">
+      <div class="row">
+        <form action="">
+          <div class="col-lg-8 mx-auto">
+            <div class="input-group mb-3">
+
+              <input type="text" class="form-control" placeholder="找地點" aria-label="Recipient's username"
+                aria-describedby="searchButton" id="dropdownMenuInput1" data-bs-toggle="dropdown" aria-expanded="false">
+
+              <a class="btn btn-primary" type="button" id="searchButton">搜尋一下</a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuInput1">
+                <div class="card-body" id="dropDownMenuForCity">
+                  <div class="row mb-2">
+                    <div class="col-sm-auto">
+                      <h5>北部</h5>
+                    </div>
+
+                    <div class="col-sm">
+                      <a href="">臺北市</a>
+                      <a href="">新北市</a>
+                      <a href="">桃園市</a>
+                      <a href="">新竹市</a>
+                      <a href="">新竹縣</a>
+                      <a href="">基隆市</a>
+                    </div>
+
+                  </div>
+
+                  <div class="row mb-2">
+                    <div class="col-sm-auto">
+                      <h5>中部</h5>
+                    </div>
+
+                    <div class="col-sm">
+                      <a href="">臺中市</a>
+                      <a href="">苗栗縣</a>
+                      <a href="">彰化縣</a>
+                      <a href="">南投縣</a>
+                      <a href="">雲林縣</a>
+                    </div>
+
+                  </div>
+
+                  <div class="row mb-2">
+
+                    <div class="col-sm-auto">
+                      <h5>南部</h5>
+                    </div>
+
+                    <div class="col-sm">
+                      <a href="">台南市</a>
+                      <a href="">高雄市</a>
+                      <a href="">嘉義市</a>
+                      <a href="">嘉義縣</a>
+                      <a href="">屏東縣</a>
+                    </div>
+
+                  </div>
+
+                  <div class="row mb-2">
+
+                    <div class="col-sm-auto">
+                      <h5>東部</h5>
+                    </div>
+
+                    <div class="col-sm">
+                      <a href="">台東縣</a>
+                      <a href="">花蓮縣</a>
+                    </div>
+                  </div>
+
+                  <div class="row mb-2">
+
+                    <div class="col-sm-auto">
+                      <h5>離島</h5>
+                    </div>
+
+                    <div class="col-sm">
+                      <a href="">澎湖縣</a>
+                      <a href="">金門縣</a>
+                      <a href="">連江縣</a>
+                    </div>
+                  </div>
+
+                  <div class="row mb-2">
+
+                    <div class="col-sm-auto">
+                      <a href="">&nbsp&nbsp</a>
+                    </div>
+
+                    <div class="col-sm">
+                      <a href="">全國</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+    <!-- 搜尋 end -->
+
+    <div class="container marketing">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- 第一張卡片開始 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="" id="card-img-top-1" alt="...">
+            <div class="card-body">
+              <h5 id="card-title-1"></h5>
+              <div class="card-text">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne-1" aria-expanded="false" aria-controls="flush-collapseOne-1">
+                        地理位置介紹
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne-1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
+                      <div id="accordion-body-1"></div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo-1" aria-expanded="false" aria-controls="flush-collapseTwo-1">
+                        環境介紹
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo-1" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample">
+                      <div id="accordion-body-2"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer" id="footer-1">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        <!-- 第一張卡片結結束 -->
+
+        <!-- 第二張卡片開始 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="" id="card-img-top-3" alt="...">
+            <div class="card-body">
+              <h5 id="card-title-3"></h5>
+              <div class="card-text">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne-2" aria-expanded="false" aria-controls="flush-collapseOne-2">
+                        地理位置介紹
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne-2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
+                      <div id="accordion-body-3"></div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo-2" aria-expanded="false" aria-controls="flush-collapseTwo-2">
+                        環境介紹
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo-2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample">
+                      <div id="accordion-body-6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer" id="footer-3">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        <!-- 第二張卡片結束 -->
+
+        <!-- 第三張卡片開始 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="" id="card-img-top-5" alt="...">
+            <div class="card-body">
+              <h5 id="card-title-5"></h5>
+              <div class="card-text">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne-3" aria-expanded="false" aria-controls="flush-collapseOne-3">
+                        地理位置介紹
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne-3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample">
+                      <div id="accordion-body-5"></div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo-3" aria-expanded="false" aria-controls="flush-collapseTwo-3">
+                        環境介紹
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo-3" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                      data-bs-parent="#accordionFlushExample">
+                      <div id="accordion-body-10"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer" id="footer-5">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+        <!-- 第三張卡片結束 -->
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading mb-5">樂活魚業</h2>
+          <p class="lead">&emsp;&emsp;台灣四面環海，溫暖潮流帶著豐富海洋資源，從北至南、西到東、本島到離島，從季節現撈到養殖與休閒，現撈仔的尚青幸福！</p>
+        </div>
+
+        <div class="col-md-5">
+          <img
+            src="https://www.msc.org/images/default-source/msc-english/spotlights-500x500/fisher-throwing-a-net.tmb-medium500.jpg?sfvrsn=e056554c_1"
+            class="d-block w-100" alt="替代文字1">
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading mb-5">採果旅行</h2>
+          <p class="lead">&emsp;&emsp;一臺灣水果主要為熱帶、副熱帶氣候型水果，地形上因為有山坡地與高山，也能栽種溫帶水果。我們依季節分成春、夏、秋、冬與全年產期，歡迎大家來認識臺灣的水果！</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img
+            src="https://img.alicdn.com/bao/uploaded/i4/2204191628299/O1CN01qjV56R2BAzheKrELN_!!0-item_pic.jpg_500x500q90.jpg"
+            class="d-block w-100" alt="替代文字2">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading mb-5">花海旅行</h2>
+          <p class="lead">&emsp;&emsp;生機蓬勃的島內有各種顏色，隨時都有不一樣的花朵開在角落，勾勒出臺灣的生命力。春天粉嫩，夏季狂豔，秋天轉色黃帶紅，冬季走入紛白，為您介紹這些花朵小知識。</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://www.funtime.com.tw/blog/wp-content/uploads/2020/05/27-700x700.jpg" class="d-block w-100"
+            alt="替代文字3">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div>
+
+    <!-- FOOTER start -->
+    <footer class="container">
+      <p class="fixed-bottom"><a class="float-end backToTop" href="#">回到上方</a></p>
+      <marquee id="horse" direction="right" height="30" scrollamount="5" behavior="alternate" bgcolor="black">
+        是誰住在深海的大麻園裡出品</marquee>
+    </footer>
+    <!-- FOOTER end -->
+  </main>
+  <script src="../js/index.js"></script>
+</body>
+
+</html>

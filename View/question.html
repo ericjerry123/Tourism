@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>全國休閒農業區旅遊資訊</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+
+    <script src="../vex/dist/js/vex.combined.min.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-os'</script>
+    <link rel="stylesheet" href="../vex/dist/css/vex-theme-os.css">
+    <link rel="stylesheet" href="../vex/dist/css/vex.css">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/carousel.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
+                <a id="navbarBrand" class="navbar-brand" href="index.html">全國休閒農業區旅遊</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse " id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    </ul>
+
+                    <span class="nav-item">
+                        <a class="nav-link" href="Info.html">聯絡我們</a>
+                    </span>
+
+                    <span class="nav-item">
+                        <a class="nav-link" href="question.html">常見問題</a>
+                    </span>
+
+                    <span class="nav-item">
+                        <a id="loginSystem" class="nav-link" href="#">登入</a>
+                    </span>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <div class="page py-4">
+        <div class="container">
+            <div class="page-head mb-4">
+                <h2 class="sub-title">常見問題</h2>
+            </div>
+            <div class="f-flex faq flex-column mb-5">
+                <h6>Q1如何推廣及更新業者資訊?</h6>
+
+                <div class="f-flex faq flex-column mb-5">
+                    <div class="f-flex faq flex-column mb-5">
+                        <div class="bg-light ml-md-4 p-3 rounded">
+                            A：(1)請至首頁註冊/登入，詳細操作步驟參照說明書；&nbsp;(2)洽詢客服小組(s1090372@gm.pu.edu.tw )會有專人協助。</div>
+                    </div>
+
+                    <div class="f-flex faq flex-column mb-5">
+                        <h6>Q2如何推廣活動訊息?需提供什麼資料?</h6>
+
+                        <div class="bg-light ml-md-4 p-3 rounded">A：請先下載申請表單<a href="#">【DOCX格式】</a> <a
+                                href="">【PDF格式】</a> <a href="">【ODF格式】</a> (參考範例<a href="">【DOCX格式】</a>
+                            <a href="">【PDF格式】</a> <a
+                                href="">【ODF格式】</a>)，填寫資料後請將表單電子檔E-mail至客服信箱(s1090372@gm.pu.edu.tw)，會由客服小組確認後回覆處理。
+                        </div>
+
+                        <div class="f-flex faq flex-column mb-5">
+                            <h6>&nbsp;</h6>
+
+                            <h6>Q3休閒農業區或休閒農場如何更新農場資訊或照片?</h6>
+
+                            <div class="bg-light ml-md-4 p-3 rounded">
+                                A：請將需更新資訊或照片 Email 到客服信箱 ( s1090372@gm.pu.edu.tw )，會由客服小組協助更新。
+                            </div>
+
+                            <div class="f-flex faq flex-column mb-5">
+                                <h6>&nbsp;</h6>
+
+                                <h6>Q4如何協助推廣活動訊息?</h6>
+
+                                <div class="bg-light ml-md-4 p-3 rounded">A：請於全國休閒農業區旅遊網加入會員後即會自動訂閱電子報。 </div>
+
+                                <div class="f-flex faq flex-column mb-5">
+                                    <h6>&nbsp;</h6>
+
+                                    <h6>Q6如何取消訂閱電子報?</h6>
+
+                                    <div class="bg-light ml-md-4 p-3 rounded">A：將信箱帳號 Email 至客服信箱 (
+                                        s1090372@gm.pu.edu.tw )，會由客服小組取消訂閱處理。或直接於收到的電子報最下方，點選「取消訂閱」，您將不會再收到電子報。</div>
+
+                                    <div class="f-flex faq flex-column mb-5">
+                                        <h6>&nbsp;</h6>
+
+                                        <h6>Q7如何參與線上問卷?</h6>
+
+                                        <div class="bg-light ml-md-4 p-3 rounded">A：請於農業易遊網加入會員後即會自動訂閱電子報。</div>
+
+                                        <div class="f-flex faq flex-column mb-5">
+                                            <h6>&nbsp;</h6>
+
+                                            <h6>Q7如何取消訂閱電子報?</h6>
+
+                                            <div class="bg-light ml-md-4 p-3 rounded">A：若要參加活動請先加入會員，線上問卷會員每日限一次。</div>
+
+                                            <div class="f-flex faq flex-column mb-5">
+                                                <h6>&nbsp;</h6>
+
+                                                <h6>Q8如何介接使用網站上的資訊?</h6>
+
+                                                <div class="bg-light ml-md-4 p-3 rounded">
+                                                    A：請直接透過行政院農業委員會資料開放平台下載全國休閒農業區旅遊網相關資料。
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

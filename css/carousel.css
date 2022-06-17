@@ -1,0 +1,190 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  background-color: white;
+  font-family: '"Lato", "PingFang TC", "Helvetica Neue", Helvetica, "微軟正黑體", Arial, sans-serif';
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 1rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.navbar {
+  background-color: #00a0e9;
+}
+
+.navbar a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #00cbfd;
+}
+
+#navbarBrand {
+  font-size: 25px;
+  color: white;
+}
+
+#dropDownMenuForCity {
+  line-height: 1.5;
+  word-spacing: 15px;
+  text-decoration: none;
+}
+
+#dropDownMenuForCity .col-sm a,
+.col-sm-auto>a {
+  line-height: 1.5;
+  word-spacing: 15px;
+  text-decoration: none;
+  color: #2d526d;
+  font-size: 15px;
+}
+
+#dropDownMenuForCity a:hover {
+  background-color: rgba(253, 245, 195, 0.997);
+  color: #4f9328;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.col-sm>a,
+.col-sm-auto>a {
+  color: black;
+}
+
+footer,
+#horse {
+  font-size: 20px;
+}
+
+#horse {
+  color: #aec65b;
+}
+
+.lead {
+  font-size: 30px;
+  line-height: 2;
+  color: #3a531d;
+}
+
+.backToTop {
+  border: 1px dotted black;
+  border-radius: 10%;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #00a0e9;
+  margin: 0 50px 30px 0;
+  color: white;
+}
+
+.backToTop:hover {
+  color: white;
+}
+
+#username {
+  color: black;
+}
+
+#searchButton {
+  background-color: #009fe9cc;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+.navbar-toggler-icon {
+  color: blue;
+}
